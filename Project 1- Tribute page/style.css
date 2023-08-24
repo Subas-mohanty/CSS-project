@@ -1,0 +1,78 @@
+*{
+    padding: 2px;
+}
+.container {
+    background-color: #e5e5fd;
+    min-height: 100vh;
+    border: 10px solid #1d1e4c;
+}
+.top-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.top_section h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #1d1e4c;
+    text-transform: uppercase;
+  }
+  .top_section p {
+    font-size: 30px;
+    text-align: end;
+  }
+  
+  .image_container {
+    overflow: hidden;
+  }
+  
+  .image_container,
+  img {
+    border-radius: 50%;
+    width: 300px;
+    height: 320px;
+  }
+  .name-dob{
+    margin-right: 25px;
+  }
+  .missle-man{
+    margin-left: 30px;
+  }
+  .about{
+    margin-top: 50px;
+    margin-left: 49px;
+  }
+  .about h1{
+    font-size: 95px;
+    font-weight: 400;
+    /* margin-bottom: 20px;
+    margin-left: 67px; */
+    padding-left: 67px;
+  }
+  .about p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+  }
+  .biography {
+    margin: 10px 0;
+  }
+  .biography h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .biography ul {
+    margin-left: 50px;
+  }
+  .biography li {
+    margin-bottom: 15px;
+  }
+  
+  footer {
+    margin: 50px 0;
+  }
+  footer p {
+    text-align: end;
+  }

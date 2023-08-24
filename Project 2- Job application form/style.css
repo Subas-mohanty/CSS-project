@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+.container{
+    max-width: 900px;
+    margin: 0px auto;
+}
+.apply-box{
+    max-width: 600px;
+    /* to center the element */
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    /* for applying shadow  */
+    box-shadow: 4px 4px 4px rgba(1, 1, 1, 0.1);
+    border-radius: 8px;
+}
+.small-title{
+    font-size: 19px;
+}
+.form-container{
+    margin-top: 18px;
+    display: grid;
+    /* it will auto fit the elements and put them in 200px apart from each other and when less than that it will move all of them ino a single line */
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 15px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 17px;
+}
+input,select,textarea{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.btn-container{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+button{
+    background-color: red;
+    border: 2px solid transparent;
+    color: white;
+    /* padding is used to enlarge the element */
+    padding: 5px 7px;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+}
+/* while the cursor is above the button */
+button:hover{
+    background-color: #ccc;
+    border: 1px solid black;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+.textArea-control{
+    grid-column: 1/span 2;
+}
+.textArea-control textarea{
+    width: 100%;
+}
+
+/* responsive */
+@media (max-width: 460px){
+    .textArea-control{
+        grid-column: 1/2;
+    }
+}
